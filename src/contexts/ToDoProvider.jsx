@@ -31,9 +31,9 @@ export const ToDoProvider = ({ children }) => {
     const completedToDos = toDos.filter((todo) => todo.done);
     const pendingToDos = toDos.filter((todo) => !todo.done);
 
-    const value = { addToDo, markTodo, completedToDos, pendingToDos };
+    const valores = { addToDo, markTodo, completedToDos, pendingToDos };
     return (
-        <ToDoContext.Provider value={value}>
+        <ToDoContext.Provider value={valores}>
             {children}
         </ToDoContext.Provider>
     );

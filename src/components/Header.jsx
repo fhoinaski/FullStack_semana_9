@@ -5,14 +5,14 @@ export const Header = () => {
     <header className="header bg-body-secondary">
       <nav className="navbar navbar-expand-lg  container d-flex ">
         <span className="flex-grow-1">Tarefas.dev</span>
-        <ul class="navbar-nav ">
-          <li class="nav-item me-auto">
-            <Link class="nav-link active" aria-current="page" to="/">
+        <ul className="navbar-nav ">
+          <li className="nav-item me-auto">
+            <Link className="nav-link active" aria-current="page" to="/">
               Home
             </Link>
           </li>
-          <li class="nav-item">
-            <Link class="nav-link" to="/quemsou">
+          <li className="nav-item">
+            <Link className="nav-link" to="/quemsou">
               Quem sou
             </Link>
           </li>

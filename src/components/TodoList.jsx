@@ -9,8 +9,8 @@ export const TodoList = ({ name }) => {
       <h4>{name}</h4>
       <ul className="list-group list-group-flush">
         {name === "Finalizados"
-          ? completedToDos.map((todo) => <TodoItem todo={todo} />)
-          : pendingToDos.map((todo) => <TodoItem todo={todo} />)}
+          ? completedToDos.map((todo) => <TodoItem key={todo.id} todo={todo} />)
+          : pendingToDos.map((todo) => <TodoItem key={todo.id} todo={todo} />)}
       </ul>
     </section>
   );
